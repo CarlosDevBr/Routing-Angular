@@ -1,16 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from './auth.guard';
-import { Error404Component } from './error404/error404.component';
-import { InicioComponent } from './inicio/inicio.component';
-import { SobreComponent } from './sobre/sobre.component';
 
-const routes: Routes = [
-  {path: 'inicio', component: InicioComponent},
-  {path: 'sobre', component: SobreComponent, canActivate:[AuthGuard]},
-  {path: '', redirectTo:'inicio', pathMatch:'full'},
-  {path: '**', component: Error404Component}
-];
+const routes: Routes = [ ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
