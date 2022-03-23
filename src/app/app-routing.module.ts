@@ -5,7 +5,8 @@ import { SobreComponent } from './sobre/sobre.component';
 
 const routes: Routes = [
   {path: 'inicio', component: InicioComponent},
-  {path: 'sobre', component: SobreComponent}   
+  {path: 'sobre', component: SobreComponent}  ,
+  {path: '', redirectTo:'inicio', pathMatch:'full'} 
 ];
 
 @NgModule({
