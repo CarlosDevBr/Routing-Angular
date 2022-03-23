@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { Error404Component } from './error404/error404.component';
+import { AuthGuard } from './auth.guard';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { Error404Component } from './error404/error404.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
